@@ -1,10 +1,12 @@
-# personalized-healthcare-ml
-ML project to predict blood donation behavior and recommend personalized healthcare outreach.
 # Personalized Healthcare Recommendations – A Machine Learning Approach
 
 This project builds a machine learning model to predict whether an individual is likely to donate blood again, based on historical donation behavior. The system acts like a healthcare recommendation engine by identifying high-risk drop-offs and providing insights to re-engage potential donors.
 
 ---
+## 🚀 Live Demo
+
+👉 [Click here to try the live app](https://personalized-healthcare-ml-asu5dt8necs7eewqjuuxpk.streamlit.app/)
+
 
 ## 📊 Problem Statement
 
