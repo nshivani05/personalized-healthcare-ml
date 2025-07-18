@@ -3,12 +3,12 @@
 This project builds a machine learning model to predict whether an individual is likely to donate blood again, based on historical donation behavior. The system acts like a healthcare recommendation engine by identifying high-risk drop-offs and providing insights to re-engage potential donors.
 
 ---
-## 🚀 Live Demo
+## Live Demo
 
 👉 [Click here to try the live app](https://personalized-healthcare-ml-asu5dt8necs7eewqjuuxpk.streamlit.app/)
 
 
-## 📊 Problem Statement
+## Problem Statement
 
 The objective is to use past donation data to:
 - Predict future blood donation behavior
@@ -17,7 +17,7 @@ The objective is to use past donation data to:
 
 ---
 
-## 📁 Dataset Overview
+## Dataset Overview
 
 - **Source:** Public datasets, surveys, and donor records
 - **Entries:** 548
@@ -26,7 +26,7 @@ The objective is to use past donation data to:
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 - ~75% of users did not donate again (imbalanced dataset)
 - Frequency and Monetary had strong positive correlation
@@ -37,7 +37,7 @@ The objective is to use past donation data to:
 
 ---
 
-## 🛠️ Data Preprocessing
+## Data Preprocessing
 
 - Handled missing values
 - Applied **StandardScaler** for normalization
@@ -45,7 +45,7 @@ The objective is to use past donation data to:
 
 ---
 
-## 🤖 Model Training
+## Model Training
 
 - **Model:** Logistic Regression (Scikit-learn)
 - **Evaluation Metrics:** Accuracy, Precision, Recall, F1-Score
@@ -57,7 +57,7 @@ The objective is to use past donation data to:
 
 ---
 
-## 💡 Recommendation Logic
+## Recommendation Logic
 
 Used model predictions to simulate a recommendation engine:
 - Engage likely donors with thank-you emails
@@ -66,7 +66,7 @@ Used model predictions to simulate a recommendation engine:
 
 ---
 
-## 📈 Results Snapshot
+## Results Snapshot
 
 <img width="539" height="455" alt="image" src="https://github.com/user-attachments/assets/295acb00-9b36-46c1-ab39-a740a9b74d93" />
 
@@ -81,3 +81,10 @@ model.fit(X_train_scaled, y_train)
 y_pred = model.predict(X_test_scaled)
 
 print(classification_report(y_test, y_pred))
+
+
+## 💡 How to Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
