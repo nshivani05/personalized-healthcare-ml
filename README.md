@@ -63,7 +63,17 @@ Used model predictions to simulate a recommendation engine:
 - Engage likely donors with thank-you emails
 - Follow up with lower-likelihood donors via educational outreach
 - Prioritize frequent contributors for future drives
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
 
+# Example model and evaluation (pseudocode)
+model = LogisticRegression()
+model.fit(X_train_scaled, y_train)
+y_pred = model.predict(X_test_scaled)
+
+print(classification_report(y_test, y_pred))
+```
 ---
 ## 💡 How to Run Locally
 
@@ -76,15 +86,5 @@ streamlit run app.py
 <img width="539" height="455" alt="image" src="https://github.com/user-attachments/assets/295acb00-9b36-46c1-ab39-a740a9b74d93" />
 
 
-```python
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
-
-# Example model and evaluation (pseudocode)
-model = LogisticRegression()
-model.fit(X_train_scaled, y_train)
-y_pred = model.predict(X_test_scaled)
-
-print(classification_report(y_test, y_pred))
 
 
