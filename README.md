@@ -7,7 +7,12 @@ This project builds a machine learning model to predict whether an individual is
 
 👉 [Click here to try the live app](https://personalized-healthcare-ml-asu5dt8necs7eewqjuuxpk.streamlit.app/)
 
+## 💡 How to Run Locally
 
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 ## Problem Statement
 
 The objective is to use past donation data to:
@@ -83,8 +88,3 @@ y_pred = model.predict(X_test_scaled)
 print(classification_report(y_test, y_pred))
 
 
-## 💡 How to Run Locally
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
