@@ -7,12 +7,7 @@ This project builds a machine learning model to predict whether an individual is
 
 👉 [Click here to try the live app](https://personalized-healthcare-ml-asu5dt8necs7eewqjuuxpk.streamlit.app/)
 
-## 💡 How to Run Locally
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
 ## Problem Statement
 
 The objective is to use past donation data to:
@@ -70,7 +65,12 @@ Used model predictions to simulate a recommendation engine:
 - Prioritize frequent contributors for future drives
 
 ---
+## 💡 How to Run Locally
 
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 ## Results Snapshot
 
 <img width="539" height="455" alt="image" src="https://github.com/user-attachments/assets/295acb00-9b36-46c1-ab39-a740a9b74d93" />
